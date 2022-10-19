@@ -30,3 +30,9 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
 ---
+
+## Resources
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+node.js site
+class curriculum
+https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository

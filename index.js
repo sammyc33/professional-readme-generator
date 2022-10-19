@@ -48,7 +48,7 @@ const questions = [
     {
         type: "checkbox",
         message: "Select a license for your project:",
-        choices: ['MIT', 'Apache', 'BSD', 'GPL', 'Mozilla-Public', 'None'],
+        choices: ['MIT', 'Apache', 'BSD', 'None'],
         name: "license",
     },
 ];
@@ -56,17 +56,19 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(`${fileName}.md`, generateMarkdown(data), function (err) {
-        if (err) return console.log(err);
-        console.log("Success! Your shiny new README file has been created.");
-        }
-    )};
+        if (err) 
+            return console.log(err);
+        console.log("Success! Your shiny new README file is being generated. THis may take a few moments.");
+    }
+    )
+};
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
-    .prompt(questions)
-    .then((file) =>
-        writeToFile(file.title, file)
+        .prompt(questions)
+        .then((response) =>
+            writeToFile(response.title, response)
         )
 };
 
