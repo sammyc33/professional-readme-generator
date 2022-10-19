@@ -8,70 +8,64 @@ const questions = [
     {
         type: "input",
         message: "What is the title of your project?",
-        name: "projTitle"
+        name: "title"
     },
     {
         type: "input",
         message: "Describe your project.",
-        name: "projDescription"
-    },
-    {
-        type: "input",
-        message: "What is the title of the project?",
-        name: "projTitle"
+        name: "description"
     },
     {
         type: "input",
         message: "Describe how users can install the application.",
-        name: "projInstall"
+        name: "install"
     },
     {
         type: "input",
         message: "Once installed, describe how to use the application?",
-        name: "projUsage"
+        name: "usage"
     },
     {
         type: "input",
         message: "How can other developers contribute to this project?",
-        name: "projContribute"
+        name: "contribute"
     },
     {
         type: "input",
         message: "How can you test this application?",
-        name: "projTest"
+        name: "test"
     },
     {
         type: "input",
         message: "What is your Github profile name?",
-        name: "projQuestions1"
+        name: "profile"
     },
     {
         type: "input",
         message: "What is your email address?",
-        name: "projQuestions2"
-    },
-    {
-        type: "input",
-        message: "What is the title of your project?",
-        name: "projTitle"
+        name: "email"
     },
     {
         type: "checkbox",
         message: "Select a license for your project:",
         choices: ['MIT', 'Apache', 'BSD', 'GPL', 'Mozilla-Public', 'None'],
-        name: "projLicense"
+        name: "license",
     },
 ];
 
 // TODO: Create a function to write README file
-/*function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data);
-};*/
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err)
+            return err;
+    }
+    console.log("Success! Your shiny new README file has been created."));
+};
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-}
+};
 
 // Function call to initialize app
 init();
