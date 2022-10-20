@@ -52,7 +52,11 @@ A node.js / Inquirer powered application to generate professional README.md file
 ## Demo
 ---
 
+Click the player to start the demo video. 
+
 [![Portfolio](https://github.com/sammyc33/professional-readme-generator/blob/main/Player.png)](https://drive.google.com/file/d/1_U4nlMMO7vYkjonaIRMdDwnRI41pK8bU/view?usp=sharing)
+
+If you have trouble playing the vidoe, you can also find it here: (https://drive.google.com/file/d/1_U4nlMMO7vYkjonaIRMdDwnRI41pK8bU/view?usp=sharing)
 
 ---
 
