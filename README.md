@@ -1,4 +1,15 @@
 # Professional README Generator
+---
+
+  ## Table of Contents
+  - [User Story](#user-story)
+  - [Acceptance Criteria](#acceptance-criteria)
+  - [Description](#description)
+  - [Demo](#demo)
+  - [Usage](#usage)
+  - [Licensing](#licensing)
+
+---
 
 ## User Story
 ---
@@ -31,8 +42,43 @@ THEN I am taken to the corresponding section of the README
 
 ---
 
-## Resources
-https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
-node.js site
-class curriculum
-https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository
+## Description
+---
+
+A node.js / Inquirer powered application to generate professional README.md files based on information that you provide. 
+
+---
+
+## Demo
+---
+
+[![Portfolio](https://github.com/sammyc33/professional-readme-generator/blob/main/Player.png)](https://drive.google.com/file/d/1_U4nlMMO7vYkjonaIRMdDwnRI41pK8bU/view?usp=sharing)
+
+---
+
+## Usage
+---
+
+### Download and Launch the Application
+- Fork the code in the repository and install a copy of the application to your local machine. 
+- Launch the application using your local terminal. I use Git Bash. You will use cd (the file location on your local machine), then to launch the application (I use VS Code for this) type in code . and click enter. 
+
+### Install Inquirer Package
+- Once the application is open in VS Code, you will need to install Inquirer. You can do this either using your local terminal or the integrated terminal in VS Code. I prefer the latter, as it keeps everything in one place. 
+- Right click on the file named index.js, then choose Open in Integrated Terminal. 
+- To install Inquirer, run npm i in the integrated terminal. 
+- Once the installation is complete, you're ready to initialize the application!
+
+### Start Generating README.md Files
+- In the integrated terminal, type node index.js. This will launch the application. If you're successful, you should see the first question. 
+- Answer each question, clicking enter after each. The title of the project will be used as the file name. If you provide your Github username, a URL to your Github profile will be created. 
+- Once you have completed all questions, the newly generated file will appear in your file tree to the left. You can move it to a new folder, copy it, rename it to README.md, etc. 
+
+---
+
+## Licensing
+---
+
+Please review licensing details in the repository. 
+
+---
